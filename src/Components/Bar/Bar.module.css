@@ -1,0 +1,21 @@
+.barOuter {
+  width: 70%;
+  height: 10px;
+  background-color: #677067;
+  background-repeat: no-repeat;
+  margin: 0 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.barInner {
+  height: 100%;
+  margin: 0 1px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 15px;
+  cursor: pointer;
+}

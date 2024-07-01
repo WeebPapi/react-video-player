@@ -1,0 +1,12 @@
+video {
+  width: 1280px;
+  height: 720px;
+}
+.controls {
+  background-color: #242a24;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  border-radius: 40px;
+}
