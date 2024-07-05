@@ -5,18 +5,12 @@ interface ControlButtonProps {
   icon: ReactNode;
   altIcon: ReactNode;
   cb: () => void;
-  useAlt: boolean;
-  setUseAlt: React.Dispatch<React.SetStateAction<boolean>>;
+  kind: string;
 }
 
-const ControlButton: FC<ControlButtonProps> = ({
-  icon,
-  altIcon,
-  cb,
-  useAlt,
-  setUseAlt,
-}) => {
+const ControlButton: FC<ControlButtonProps> = ({ icon, altIcon, cb, kind }) => {
   const [animating, setAnimating] = useState(false);
+  const [useAlt, setUseAlt] = useState(false);
 
   return (
     <div
@@ -30,7 +24,7 @@ const ControlButton: FC<ControlButtonProps> = ({
         cb();
       }}
     >
-      {useAlt ? icon : altIcon}
+      {useAlt ? altIcon : icon}
     </div>
   );
 };
